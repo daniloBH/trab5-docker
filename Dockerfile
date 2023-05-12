@@ -1,5 +1,4 @@
 FROM openjdk:11
-COPY . ola_mundo
-WORKDIR .
+COPY ola_mundo.java /
 RUN javac ola_mundo.java
 CMD ["java", "ola_mundo"]
