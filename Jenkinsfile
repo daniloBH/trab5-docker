@@ -8,13 +8,12 @@ pipeline {
                    docker build -t ola_mundo .
                """
             }
-
-            stage('Run') {
-                steps {
-                    sh """
-                        docker run -it --rm ola_mundo
-                    """
-                }
+        }
+        stage('Run') {
+            steps {
+                sh """
+                    docker run -it --rm ola_mundo
+                """
             }
         }
     }
