@@ -12,7 +12,7 @@ pipeline {
         stage('Run') {
             steps {
                 sh """
-                    docker run -it --rm ola_mundo
+                    docker run --rm ola_mundo
                 """
             }
         }
